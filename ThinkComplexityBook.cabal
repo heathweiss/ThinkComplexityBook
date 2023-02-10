@@ -25,6 +25,16 @@ source-repository head
 
 library
   exposed-modules:
+      Chap2.AlgaCities
+      Chap2.AlgaPeople
+      Chap2.FglPeople
+      Chap2.HasBoltPeople
+      Chap2.People
+      GraphQl.GraphQlServer
+      GraphQl.RingLattice
+      GraphQl.Types
+      GraphTypes
+      HelloAlga.TheoryPaper
       Lib
   other-modules:
       Paths_ThinkComplexityBook
@@ -32,7 +42,20 @@ library
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      HUnit
+    , algebraic-graphs
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , data-default
+    , fgl
+    , gps >=1.2
+    , hasbolt
+    , morpheus-graphql
+    , mtl
+    , rio
+    , scotty
+    , text
   default-language: Haskell2010
 
 executable ThinkComplexityBook-exe
@@ -43,8 +66,21 @@ executable ThinkComplexityBook-exe
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      ThinkComplexityBook
+      HUnit
+    , ThinkComplexityBook
+    , algebraic-graphs
     , base >=4.7 && <5
+    , bytestring
+    , containers
+    , data-default
+    , fgl
+    , gps >=1.2
+    , hasbolt
+    , morpheus-graphql
+    , mtl
+    , rio
+    , scotty
+    , text
   default-language: Haskell2010
 
 test-suite ThinkComplexityBook-test
@@ -56,6 +92,19 @@ test-suite ThinkComplexityBook-test
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      ThinkComplexityBook
+      HUnit
+    , ThinkComplexityBook
+    , algebraic-graphs
     , base >=4.7 && <5
+    , bytestring
+    , containers
+    , data-default
+    , fgl
+    , gps >=1.2
+    , hasbolt
+    , morpheus-graphql
+    , mtl
+    , rio
+    , scotty
+    , text
   default-language: Haskell2010

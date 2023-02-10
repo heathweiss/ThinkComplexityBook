@@ -21,6 +21,20 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- bytestring
+- rio
+- morpheus-graphql
+- HUnit
+- fgl
+- containers
+- algebraic-graphs
+- scotty
+- gps >= 1.2
+- hasbolt
+- data-default
+- text
+- mtl
+
 
 ghc-options:
 - -Wall
